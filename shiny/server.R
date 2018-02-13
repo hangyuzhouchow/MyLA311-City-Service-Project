@@ -15,9 +15,6 @@ population <- read.csv("data/CDpopu&area.csv")
 # CD shapefile
 cd <- readOGR("cdinfo/l.a. city council district (2012).shp")  
 
-#--------------------isolate & clean data-------------------
-
-
 
 shinyServer(function(input, output,session){
   # --------------sidebar Hide Default-------
