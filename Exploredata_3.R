@@ -2,6 +2,9 @@ library(ggplot2)
 library(lubridate)
 library(dplyr)
 library(grid)
+
+### First time data exploration###
+
 request = read.csv("MyLA311_Service_Request_Data_2016.csv")
 population <- read.csv("CDpopu&area.csv")
 solved <- merge(request, population, by.x = "CD", by.y = "CD",all.x = T)
